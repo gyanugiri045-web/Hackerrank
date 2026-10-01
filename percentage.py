@@ -5,6 +5,10 @@ student = {
 
 student_name = input("Enter a name of studnet:")
 
+
+
+
+
 n = student[student_name]
 total = sum(n)
 print(f"The average of {student_name} is  {total/3}")
