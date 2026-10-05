@@ -44,6 +44,9 @@ class person:
     def welcome(self):
         message = self.greet()
         print(message, "welcome to our app.")
+
+    def __repr__(self):
+        return f"{self.name} is {self.age} year old."
         
     
 person_one = person("rajes", 20)
