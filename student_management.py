@@ -38,11 +38,8 @@ def view_student():
       print("roll number:", student["roll"])
       print("marks:", student["marks"])
 
-
-
 add_studennt()
 view_student()
-
     
          
 

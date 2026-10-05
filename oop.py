@@ -15,7 +15,7 @@
 
 from datetime import date
 
-class person:
+class Person:
 
     species = "Human"
     person_created = 0
@@ -24,11 +24,11 @@ class person:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        person.person_created += 1
+        Person.person_created += 1
 
     @classmethod
     def get_created_person_number(cls):
-        return f"There are {person.person_created} are created."
+        return f"There are {Person.person_created} are created."
     
     @classmethod
     def from_birth_year(cls, name, year):
@@ -49,11 +49,11 @@ class person:
         return f"{self.name} is {self.age} year old."
         
     
-person_one = person("rajes", 20)
-person_two = person("rohan", 21)
-person_three = person.from_birth_year("sara", 2000)
+person_one = Person("rajes", 20)
+person_two = Person("rohan", 21)
+person_three = Person.from_birth_year("sara", 2000)
 print(person_three.__dict__)
-print(person.get_created_person_number())
+print(Person.get_created_person_number())
 
 # print(person_one.greet())
 # print(person_two.greet())

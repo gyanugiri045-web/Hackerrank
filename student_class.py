@@ -19,7 +19,6 @@ class Student:
     def get_marks(self):
         return list(self.__marks)
     
-    
     def __str__(self):
         return f"{self.name}: {self.__marks} (avg: {self.average():.2f})"
     
